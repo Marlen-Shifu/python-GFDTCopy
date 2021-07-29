@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Home{% endblock %}</title>
+    <style>
+        .share-btns {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .share-btns a {
+            margin-bottom: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .share-btns a:not(:last-child) {
+            margin-right: 5px;
+        }
+
+        .share-btns a.facebook {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat left top;
+        }
+
+        .share-btns a.vkontakte {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -168px top;
+        }
+
+        .share-btns a.ok {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -126px top;
+        }
+
+        .share-btns a.twitter {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -42px top;
+        }
+
+        .share-btns a.pinterest {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -210px top;
+        }
+
+        .share-btns a.mail {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -294px top;
+        }
+
+        .share-btns a.telegram {
+            background: url("https://e7.pngegg.com/pngimages/730/46/png-clipart-computer-icons-share-icon-others-miscellaneous-computer-network.png") no-repeat -672px top;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="header" style="display:flex;justify-content:space-between">
+    <div class="logo">
+        <a href="{% url 'home' %}">Home</a>
+    </div>
+    <div class="links">
+        <a href="{% url 'create_task' %}">Create task</a>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

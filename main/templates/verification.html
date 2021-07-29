@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- подключение Css -->
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <!-- подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- подключение Box-icons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- подключение Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- подключение AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--подключение Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<section class="verification">
+  <div class="container">
+    <div class="verification_body">
+      <div class="verification__title">
+        <h1>Verification</h1>
+      </div>
+      <div class="verification__subtitle">
+        <h3>{{ message }}</h3>
+      </div>
+      <div class="verification_content">
+        <div class="verification_content_info">
+          <span>Цель:</span>
+          <p>{{ task.goal }}</p>
+        </div>
+
+        <div class="verification_content_info">
+          <span>Deadline:</span>
+          <p>{{ task.deadline }}</p>
+        </div>
+
+        <div class="verification_content_info">
+          <span>Оплата в случаи неудачи:</span>
+          <p>${{ task.payment }} </p>
+        </div>
+
+        <div class="verification_content_info">
+          <span>Почта:</span>
+          <p>{{ task.user_email }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

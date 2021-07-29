@@ -1,0 +1,8 @@
+celerybeat-schedule.bak
+celerybeat-schedule.dat
+celerybeat-schedule.dir
+db.sqlite3
+start
+project/settings.py
+.idea/
+venv/

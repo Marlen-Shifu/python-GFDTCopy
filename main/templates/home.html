@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="share-btns">
+    <a
+        class="facebook"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://www.facebook.com/sharer.php?u=АДРЕС_СТРАНИЦЫ','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Поделиться в Facebook"></a>
+    <a
+        class="vkontakte"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://vkontakte.ru/share.php?url=https://www.youtube.com','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Поделиться Вконтакте"></a>
+    <a
+        class="ok"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st._surl=АДРЕС_СТРАНИЦЫ&st.comments=ОПИСАНИЕ','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Поделиться в Одноклассниках"></a>
+    <a
+        class="telegram"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://telegram.me/share/url?url=http://localhost:8000/','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Поделиться в Телеграм"></a>
+    <a
+        class="pinterest"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://ru.pinterest.com/pin/create/button/?url=АДРЕС_СТРАНИЦЫ','sharer','status=0,toolbar=0,width=650,height=500');"
+        data-media="АДРЕС_ИЗОБРАЖЕНИЯ"
+        title="Запинить"></a>
+    <a
+        class="twitter"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://twitter.com/intent/tweet?text=ТАЙТЛ_СТРАНИЦЫ. ОПИСАНИЕ. СССЫЛКА','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Твитнуть"></a>
+    <a
+        class="mail"
+        rel="nofollow"
+        href="javascript: void(0)"
+        onClick="window.open('https://connect.mail.ru/share?url=АДРЕС_СТРАНИЦЫ','sharer','status=0,toolbar=0,width=650,height=500');"
+        title="Поделиться в @Мой мир"></a>
+</div>
+{% endblock %}
